@@ -10,24 +10,63 @@ article {
     transform-origin: center;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        color: #28666e;
+
+        &::after {
+            position: absolute;
+            inset-block: 0;
+            inset-inline: 0;
+            cursor: pointer;
+            content: "";
+        }
+
+        &:focus {
+            outline: 1px dotted #28666e;
+        }
+
+        .icon {
+            min-width: 24px;
+            width: 24px;
+            height: 24px;
+            margin-left: 5px;
+            transform: translateX(var(--link-icon-translate));
+            opacity: var(--link-icon-opacity);
+            transition: all 0.3s;
+        }
+    }
+
+    h2 {
+        margin: 0 0 18px 0;
+        font-family: "Bebas Neue", cursive;
+        font-size: 1.9rem;
+        letter-spacing: 0.06em;
+        color: var(--title-color);
+        transition: color 0.3s ease-out;
+    }
+
+    img {
+        width: 100%;
+        transform-origin: center;
+        transform: scale(var(--img-scale));
+        transition: transform 0.4s ease-in-out;
+    }
+
+    &:has(:hover, :focus) {
+        --img-scale: 1.1;
+        --title-color: #28666e;
+        --link-icon-translate: 0;
+        --link-icon-opacity: 1;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
 }
 
-article a::after {
-    position: absolute;
-    inset-block: 0;
-    inset-inline: 0;
-    cursor: pointer;
-    content: "";
-}
-
-/* basic article elements styling */
-article h2 {
-    margin: 0 0 18px 0;
-    font-family: "Bebas Neue", cursive;
-    font-size: 1.9rem;
-    letter-spacing: 0.06em;
-    color: var(--title-color);
-    transition: color 0.3s ease-out;
+.article-body {
+    padding: 24px;
 }
 
 figure {
@@ -37,37 +76,7 @@ figure {
     overflow: hidden;
 }
 
-article img {
-    width: 100%;
-    transform-origin: center;
-    transform: scale(var(--img-scale));
-    transition: transform 0.4s ease-in-out;
-}
 
-.article-body {
-    padding: 24px;
-}
-
-article a {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    color: #28666e;
-}
-
-article a:focus {
-    outline: 1px dotted #28666e;
-}
-
-article a .icon {
-    min-width: 24px;
-    width: 24px;
-    height: 24px;
-    margin-left: 5px;
-    transform: translateX(var(--link-icon-translate));
-    opacity: var(--link-icon-opacity);
-    transition: all 0.3s;
-}
 
 /* using the has() relational pseudo selector to update our custom properties */
 article:has(:hover, :focus) {
@@ -99,26 +108,29 @@ article:has(:hover, :focus) {
 }
 
 @container card (min-width: 380px) {
-    .article-wrapper {
-        display: grid;
-        grid-template-columns: 100px 1fr;
-        gap: 16px;
-    }
 
-    .article-body {
-        padding-left: 0;
+    .article {
+        &-wrapper {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 16px;
+        }
+
+        &-body {
+            padding-left: 0;
+        }
     }
 
     figure {
         width: 100%;
         height: 100%;
         overflow: hidden;
-    }
 
-    figure img {
-        height: 100%;
-        aspect-ratio: 1;
-        object-fit: cover;
+        img {
+            height: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
     }
 }
 
@@ -130,4 +142,8 @@ article:has(:hover, :focus) {
     position: absolute;
     white-space: nowrap;
     width: 1px;
+}
+
+.read-more {
+    display: none;
 }
