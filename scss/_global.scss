@@ -1,0 +1,33 @@
+//fonts-family
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap");
+@import url("https://myfonts.ru/myfonts?fonts=mrkindlyjasmineg");
+//fonts-color
+$color_fonts_1: #0499dd;
+//fonts-size
+$font_size_1: 24px;
+$font_size_2: 14px;
+
+//Container
+.container {
+  max-width: 1180px; // 1920 все меняется
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  background-color: #fff;
+
+  /* font-family: 'mr_KindlyJasmineG', arial; */
+}
+
+//Botton
+.btn {
+  color: #fff;
+  padding: 12px 43px;
+  background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+  border-radius: 40px;
+  bottom: 0;
+}
