@@ -25,16 +25,16 @@ let mainSliderOptions = {
       this.el.classList.remove("loading");
       this.autoplay.start();
     },
-    slideChangeTransitionEnd: function () {
-      let swiper = this,
-        captions = swiper.el.querySelectorAll(".caption");
-      for (let i = 0; i < captions.length; ++i) {
-        captions[i].classList.remove("show");
-      }
-      swiper.slides[swiper.activeIndex]
-        .querySelector(".caption")
-        .classList.add("show");
-    },
+    // slideChangeTransitionEnd: function () {
+    //   let swiper = this,
+    //     captions = swiper.el.querySelectorAll(".caption");
+    //   for (let i = 0; i < captions.length; ++i) {
+    //     captions[i].classList.remove("show");
+    //   }
+    //   swiper.slides[swiper.activeIndex]
+    //     .querySelector(".caption")
+    //     .classList.add("show");
+    // },
     progress: function () {
       let swiper = this;
       for (let i = 0; i < swiper.slides.length; i++) {
