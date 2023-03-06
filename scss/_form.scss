@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap');
 
 .feedback {
-    background-image: url('../../img/form/form-background.png');
+    background-image: url('../img/form/form-background.png');
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 50px;
@@ -82,7 +82,7 @@
 @media (max-width: 428px) {
 
     .feedback {
-        background-image: url('../../img/form/form-background-mobile.png');
+        background-image: url('../img/form/form-background-mobile.png');
 
         .container {
             justify-content: center;

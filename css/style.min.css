@@ -1386,7 +1386,7 @@ article:has(:hover, :focus) {
   }
 }
 .feedback {
-  background-image: url("../../img/form/form-background.png");
+  background-image: url("../img/form/form-background.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 50px;
@@ -1453,7 +1453,7 @@ article:has(:hover, :focus) {
 }
 @media (max-width: 428px) {
   .feedback {
-    background-image: url("../../img/form/form-background-mobile.png");
+    background-image: url("../img/form/form-background-mobile.png");
   }
   .feedback .container {
     justify-content: center;
