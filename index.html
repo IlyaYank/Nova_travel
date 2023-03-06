@@ -17,7 +17,7 @@
     <div class="container">
       <!--Header__NAV-->
       <div class="header__nav">
-        <a href="#!"><img class="header__nav-logo" src="./img/header/logo-test1.svg" alt="Nova Travel" /></a>
+        <a href="#!"><img class="header__nav-logo" src="./img/header/logo-header.svg" alt="Nova Travel" /></a>
 
         <nav class="header__nav-bar" id="nav">
           <ul class="header__nav-list">
@@ -25,7 +25,7 @@
               <a href="#glav" class="header__nav-item-list">Главная</a>
             </li>
             <li class="header__nav-item">
-              <a href="#excursion" class="header__nav-item-list">Экскурсии</a>
+              <a href="#excursionMain" class="header__nav-item-list">Экскурсии</a>
             </li>
             <li class="header__nav-item">
               <a href="#about" class="header__nav-item-list">О нас</a>
@@ -34,10 +34,13 @@
               <a href="#types_excursions" class="header__nav-item-list">Виды экскурсий</a>
             </li>
             <li class="header__nav-item">
-              <a href="#pictures" class="header__nav-item-list">Галерея</a>
+              <a href="#gal" class="header__nav-item-list">Галерея</a>
             </li>
             <li class="header__nav-item">
-              <a href="#reviews" class="header__nav-item-list">Отзывы</a>
+              <a href="#rewmain" class="header__nav-item-list">Отзывы</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#calcmain" class="header__nav-item-list">Расчитать </a>
             </li>
             <li class="header__nav-item">
               <a href="#footer" class="header__nav-item-list">Контакты </a>
@@ -58,20 +61,21 @@
           <p class="header__content-info-title-text4">
             «Раз в году, посещай место, где ты никогда не был» — Далай Лама
           </p>
-          <a href="#!" class="btn header__content-info-btn">К экскурсиям <img src="./img/header/Arrow-1.svg"
+          <a href="#!" class="btn header__content-info-btn">Связться с нами <img src="./img/header/Arrow-1.svg"
               alt="Arrow" /></a>
         </div>
         <div class="header__content-info-social">
-          <img src="./img/social/inst.svg" alt="" />
-          <img src="./img/social/tg.svg" alt="" />
-          <img src="./img/social/wh.svg" alt="" />
+          <a href="https://instagram.com/nova_travel_kg"><img src="./img/social/inst.svg" alt="" /></a>
+          <a href="https://api.whatsapp.com/send/?phone=996703232306&text&type=phone_number&app_absent=0"><img
+              src="./img/social/wh.svg" alt="" /></a>
+          <a href=""><img src="./img/social/tg.svg" alt="" /></a>
         </div>
       </div>
     </div>
   </header>
 
   <!--Excursion-slider-->
-  <section class="myslider">
+  <section class="myslider" id="excursionMain">
     <div class="container">
       <h2 class="excursions__title">Наши экскурсии</h2>
       <p class="excursions__text">
@@ -334,14 +338,14 @@
       </div>
 
       <div class="types_excursions__content-btn">
-        <a href="#!" class="btn types_excursions__content-card-info-btn">К экскурсиям <img
+        <a href="#!" class="btn types_excursions__content-card-info-btn">Связться с нами <img
             src="./img/header/Arrow-1.svg" alt="Arrow" /></a>
       </div>
     </div>
   </section>
 
   <!--Gallery -->
-  <section class="galeria">
+  <section class="galeria" id="gal">
     <div class="container">
       <div class="types_excursions__title">
         <h2>Галерея</h2>
@@ -351,7 +355,7 @@
   </section>
 
   <!-- Rew -->
-  <section class="rew">
+  <section class="rew" id="rewmain">
     <div class="container">
       <div class="types_excursions__title">
         <h2>Отзывы</h2>
@@ -506,12 +510,14 @@
   </section>
 
   <!-- Calculation -->
-  <div class="calc">
+  <div class="calc" id="calcmain">
     <div class="container">
+      <div class="types_excursions__title types_excursions__title_calk">
+        <h2>Калькулятор поездки</h2>
+      </div>
       <div class="box-center">
         <div class="calc__content">
           <div class="calc__title">
-            <h2>Калькулятор поездки</h2>
             <h1>Общая информация</h1>
             <h3>Дети до 5 лет без оплаты на все туры</h3>
           </div>
@@ -556,18 +562,18 @@
 
             <div class="prise">
               <ul class="price__info__list">
-                <li class="price__info__item none">
-                  Стоимсоть за одного взрослого -
-                  <span></span> руб.
+                <li class="price__info__item">
+                  Проезд за одного взрослого -
+                  <span>0</span> сом.
                 </li>
               </ul>
             </div>
 
             <div class="prise">
               <ul class="price__info__list">
-                <li class="price__info__item none">
-                  Стоимсоть за одного ребёнка -
-                  <span></span> руб.
+                <li class="price__info__item">
+                  Проезд за одного ребёнка -
+                  <span>0</span> сом.
                 </li>
               </ul>
             </div>
@@ -783,25 +789,25 @@
           <nav class="footer__nav-bar">
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
-                <a href="#!" class="footer__nav_item-list footer-color">Главная</a>
+                <a href="#glav" class="footer__nav_item-list footer-color">Главная</a>
               </li>
               <li class="footer__nav-item">
-                <a href="#!" class="footer__nav_item-list footer-color">Экскурсии</a>
+                <a href="#excursionMain" class="footer__nav_item-list footer-color">Экскурсии</a>
               </li>
               <li class="footer__nav-item">
-                <a href="#!" class="footer__nav_item-list footer-color">О нас</a>
+                <a href="#about" class="footer__nav_item-list footer-color">О нас</a>
               </li>
               <li class="footer__nav-item">
-                <a href="#!" class="footer__nav_item-list footer-color">Виды экскурсий</a>
+                <a href="#types_excursions" class="footer__nav_item-list footer-color">Виды экскурсий</a>
               </li>
               <li class="footer__nav-item">
-                <a href="#!" class="footer__nav_item-list footer-color">Галерея</a>
+                <a href="#gal" class="footer__nav_item-list footer-color">Галерея</a>
               </li>
               <li class="footer__nav-item">
-                <a href="#!" class="footer__nav_item-list footer-color">Отзывы</a>
+                <a href="#rewmain" class="footer__nav_item-list footer-color">Отзывы</a>
               </li>
               <li class="footer__nav-item">
-                <a href="#!" class="footer__nav_item-list footer-color">Контакты</a>
+                <a href="#calcmain" class="footer__nav_item-list footer-color">Расчитать</a>
               </li>
             </ul>
           </nav>
@@ -832,7 +838,7 @@
 
           <div class="footer__section-section">
             <a href="https://www.instagram.com/nova_travel_kg/"><img src="./img/footer/inst-color.svg" alt="" /></a>
-            <a href="https://wa.me/996703232306?text=Тестовый вариант создание ссылки."><img
+            <a href="https://api.whatsapp.com/send/?phone=996703232306&text&type=phone_number&app_absent=0"><img
                 src="./img/footer/wh-color.svg" alt="" /></a>
             <a href=""><img src="./img/footer/tg-color.svg" alt="" /></a>
           </div>

@@ -110,7 +110,7 @@ $zmodal: 100;
 
                 &:hover {
                     &:before {
-                        opacity: 1;
+                        opacity: 0.5;
                     }
 
                     .nombre {
@@ -137,11 +137,11 @@ $zmodal: 100;
                     right: 0;
                     margin: 0 auto;
                     width: 90%;
-                    color: $blanco;
+                    color: $negro;
                     font-size: 30px;
                     text-align: center;
                     transform: translateY(100%);
-                    text-shadow: -2px -2px 5px $negro;
+                    text-shadow: -2px -2px 5px $blanco;
                     transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) all .5s;
                 }
             }

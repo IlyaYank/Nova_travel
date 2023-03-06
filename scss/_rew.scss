@@ -42,8 +42,7 @@ article {
 
     h2 {
         margin: 0 0 18px 0;
-        font-family: "Bebas Neue", cursive;
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         letter-spacing: 0.06em;
         color: var(--title-color);
         transition: color 0.3s ease-out;
@@ -146,4 +145,13 @@ article:has(:hover, :focus) {
 
 .read-more {
     display: none;
+}
+
+@media (max-width:380px) {
+    .articles {
+        padding-inline: 0;
+        grid-template-columns: none;
+    }
+
+
 }
