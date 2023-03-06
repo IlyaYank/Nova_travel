@@ -69,7 +69,7 @@ function seralizeForm (formNode) {
 }
 
 async function sendData (data) {
-    return await fetch("./send_mail.php", {
+    return await fetch("../PHP/send_mail.php", {
         method: "POST",
         body: data,
     });

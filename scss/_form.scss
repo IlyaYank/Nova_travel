@@ -1,0 +1,96 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap');
+
+.feedback {
+    background-image: url('../../img/form/form-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+
+    .container {
+        display: flex;
+        justify-content: end;
+
+        &-form {
+            margin: 0 60px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        padding: 137px 105px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 45px;
+
+        &__input-box {
+            border-bottom: 1px solid #FFFFFF;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        input::placeholder {
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        &__btn {
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            padding: 16px 52px;
+            background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+
+    &__info {
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            color: #FFC700;
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 45px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .feedback__content {
+        padding-left: 43px;
+        padding-right: 43px;
+    }
+}
+
+@media (max-width: 428px) {
+
+    .feedback {
+        background-image: url('../../img/form/form-background-mobile.png');
+
+        .container {
+            justify-content: center;
+        }
+
+        &__content {
+            margin-top: 24px;
+            margin-bottom: 253px;
+        }
+    }
+}

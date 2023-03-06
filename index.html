@@ -747,6 +747,30 @@
     </div>
   </div>
 
+  <!-- Forms -->
+
+  <section class="feedback" id="feedback">
+    <div class="container-form">
+      <div class="container">
+        <div class="feedback__content">
+          <div class="feedback__info">
+            <h1>Остались вопросы?</h1>
+            <p>Оставь заявку и мы ответим</p>
+          </div>
+          <form action="./PHP/send_mail.php" method="POST" class="feedback__form" id="feedback__form"
+            name="feedback__form">
+            <input type="text" placeholder="Имя" class="feedback__form__input-box" id="name" name="name"
+              data-reg="^[А-ЯЁ][а-яё]*$" />
+            <input type="tel" placeholder="Телефон" class="feedback__form__input-box" id="phone" name="phone"
+              data-reg="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$" />
+            <input type="email" placeholder="Почта" class="feedback__form__input-box" id="email" name="email"
+              data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" />
+            <input type="submit" value="Оставить заявку" class="feedback__form__btn" id="button" name="button" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer id="footer" class="footer" id="footer">
